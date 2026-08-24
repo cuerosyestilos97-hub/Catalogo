@@ -789,7 +789,7 @@
             display: none;
             align-items: center;
             justify-content: center;
-            z-index: 500;
+            z-index: 1100;
             padding: 30px;
             padding-top: max(30px, env(safe-area-inset-top));
             padding-bottom: max(30px, env(safe-area-inset-bottom));
@@ -1527,7 +1527,7 @@
                     </label>
                     <input type="file" id="jsonFileInput" accept="application/json,.json" hidden="" onchange="onJsonFileSelected(event)">
 
-                    <div class="landing-error" id="jsonError" style=""></div>
+                    <div class="landing-error" id="jsonError"></div>
 
                     <button class="btn btn-primary landing-btn" id="generateBtn" onclick="handleGenerateFromJson()" disabled="">Generando documento...</button>
                 </div>
